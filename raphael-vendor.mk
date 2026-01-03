@@ -163,9 +163,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/raphael/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
-    audio.primary.raphael \
     vendor.qti.hardware.audiohalext@1.0-impl \
-    liba2dpoffload_raphael \
     libadm \
     libaudio_log_utils \
     libaudioconfigstore \
