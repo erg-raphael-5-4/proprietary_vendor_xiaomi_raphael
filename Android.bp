@@ -5,6 +5,7 @@
 soong_namespace {
     imports: [
         "hardware/qcom-caf/common/libqti-perfd-client",
+        "hardware/qcom-caf/sm8150",
         "hardware/qcom-caf/sm8350",
         "hardware/xiaomi",
         "vendor/qcom/opensource/display",
@@ -226,38 +227,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libtinyalsa",
                 "libtinycompress",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libssrec",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libssrec.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libtinyalsa",
-                "libtinycompress",
-                "libaudioroute",
-                "libexpat",
-                "libprocessgroup",
                 "libc++",
                 "libc",
                 "libm",
